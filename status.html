@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          var list_siswa = [
+            {
+                nama : "Bang Fatah",
+                kelas : "10 RPL",
+                nilai : {
+                    nilai_mtk:90,
+                    nilai_binggris:78,
+                    nilai_fisika:88
+                }
+            }
+           
+        ];
+                 
+        for(let i= 0; i < list_siswa.length; i++) {
+            document.write("<br> Nama: " + list_siswa[i].nama+"<br>");
+            document.write("<br> Kelas: " + list_siswa[i].kelas+"<br>");
+            if  (list_siswa[i].nilai.nilai_mtk > 75) {
+                document.write("Status : Lulus <br>");
+            }else
+                document.write("Status: Tidak lulus <br>");
+        }
+       
+    </script>
+</body>
+</html>
