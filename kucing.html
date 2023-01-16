@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var anjing = {
+            nama : "domge",
+            warna : "kuning",
+            hidung : "hitam",
+            jumlah_kaki : 4,
+            mata : {
+                warna_mata : "putih",
+                warna_pupil : "hitam"
+            },
+            dipanggil : function (){
+                return "menggonggong"
+            },
+
+            tidur : function () {
+                return "tidur dimana saja";
+            }
+        }
+        
+        document.write(`namanya ${anjing.nama}`+ "<br/>");
+        document.write(`warnanya ${anjing.warna}`+ "<br/>");
+        document.write(`hidungnya ${anjing.hidung}`+ "<br/>");
+        document.write(`jumlah kakinya ${anjing.jumlah_kaki}`+ "<br/>");
+        
+        
+    </script>
+</body>
+</html>
