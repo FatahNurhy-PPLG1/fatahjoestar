@@ -1,0 +1,21 @@
+<script>
+  class siswa {
+    constructor(nama,kelas,jurusan,tahun_lahir,alamat){
+      this.nama=nama
+      this.kelas=kelas
+      this.jurusan=jurusan
+      this.tahun_lahir=tahun_lahir
+    }
+    umur(){
+      var umur=this.tahun_lahir
+      var tahun=2023
+      return (tahun-umur)
+    }
+  }
+  var nama1=new siswa("gerald",11,"pplg",2006,"karawang")
+  document.write(`nama: ${nama1.nama}`+"<br/>")
+  document.write(`kelas: ${nama1.kelas}`+"<br/>")
+  document.write(`jurusan: ${nama1.jurusan}`+"<br/>")
+  document.write(`tahun lahir: ${nama1.tahun_lahir}`+"<br/>")
+  document.write(`umur gerald ${nama1.umur()}`+"tahun")
+</script>
