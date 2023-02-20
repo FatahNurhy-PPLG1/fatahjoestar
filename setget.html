@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          class user{
+            #username;
+            #password = "";
+            #umur = "";
+            #email = "";
+            set username(username){
+                this.#username = username;
+            }
+            get username(){
+                return this.#username;
+            }
+
+
+            set password(password){
+                if(password.length < 8){
+                    document.write("password harus lebih dari 8 karakter");
+                }
+                this.#password = password;
+            }
+            get password(){
+                return this.#password;
+            }
+
+
+            set umur(umur){
+                if(umur < 18){
+                    document.write("umur tidak boleh kurang dari 18 tahun")
+                    return;
+                }
+                this.#umur = umur;
+            }
+            get umur(){
+                return this.#umur;
+            }
+
+
+            set email(email){
+                if(email.includes("@")){
+                    document.write("email harus menggunakan @")
+                    return;
+                }
+                this.#email = email;
+            }
+            get email(){
+                return this.#email
+            }
+
+        }
+
+        var user1 = new user();
+        user1.username = "Fatahiiii";
+        document.write(user1.username +"<br/>")
+
+        user1.password = "fatahrajinmenabung678";
+        document.write(user1.password +"<br/>")
+
+        user1.umur = 16;
+        document.write(user1.umur +"<br/>")
+
+        user1.email = "fatahnurhidayat61@gmail.com";
+        document.write(user1.email)
+
+    </script>
+</body>
+</html>
