@@ -35,6 +35,9 @@
             }
 
             set price(price){
+                if(price < 0){
+                  return document.write("harga tidak boleh min");
+                }
                 if(typeof price != 'number') 
                 return document.write("harga harus berupa angka");
                 this.#price = price;
