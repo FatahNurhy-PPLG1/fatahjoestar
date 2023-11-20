@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tambah tambahan</title>
+    </head>
+    <body>
+        
+        <h1 id="nomor">0</h1>
+        
+        <button onClick="tambah()">tambah</button>
+        <button onClick="kurang()">kurang</button>
+        <script>
+            function tambah(){
+            var tah = document.getElementById("nomor").innerText
+            
+            tah = parseInt(tah) +1
+            document.getElementById("nomor").innerText = tah}
+            function kurang(){
+             var tah = document.getElementById("nomor").innerText
+            
+            tah = parseInt(tah) -1
+            document.getElementById("nomor").innerText = tah
+            }
+        </script>
+        
+    </body>
+</html>
