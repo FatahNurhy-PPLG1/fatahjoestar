@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tambahtambahan Kurangkurangan</title>
+    </head>
+    <body>
+        
+        <h1 id="nomor">0</h1>
+        
+        <button onClick="nambah()">tambah</button>
+        <button onClick="ngurang()">kurang</button>
+        <script>
+            function nambah(){
+            
+            var bird = document.getElementById("nomor").innerText
+            var cat = document.getElementById("nomor").style.color="black"
+            if(bird ==10){
+                var cat = document.getElementById ("nomor").style.color="green"
+            }
+            else{
+            bird = parseInt(bird) +1
+            document.getElementById("nomor").innerText = bird }
+            }
+            function ngurang(){
+             var bird = document.getElementById("nomor").innerText
+             
+             var cat = document.getElementById ("nomor").style.color="black"
+            
+          if(bird ==0){
+            var cat = document.getElementById("nomor").style.color ="red"
+          }
+          else{
+              bird = parseInt (bird )-1
+              document.getElementById("nomor").innerText = bird
+          }
+     
+     }
+        </script>
+        
+    </body>
+</html>
